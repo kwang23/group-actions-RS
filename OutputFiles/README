@@ -1,0 +1,33 @@
+This folder stores temporary files which are created in the process of
+running the program ../main.mag.
+
+For each genus xx, there are three files which are created:
+   gxxpossible_full
+   gxxnotfull
+   gxxfull
+
+The first file stores data which does not satisfy one of the cases in
+Theorem pg 390 of:
+
+Ries, J. F. X. (1993). Subvarieties of moduli space determined by finite
+groups acting on surfaces. Trans. Amer. Math. Soc., 335(1):385–406
+
+but could satisfy one of the Tables in the paper. Meanwhile, any actions
+which do satisfy one of the cases are written to gxxnotful, and any
+actions which must correspond to full automorphism groups (for instance
+if there are more than 4 branch points) are written to gxxfull. 
+
+Once all data has been checked against the Theorem, those that do not
+satisfy one of the conditions are checked against the Tables in the
+above paper (by loading gxxpossible_full from the file main.mag), and
+written to the appropriate of the latter two files.
+
+
+The latter two files are then called from ../main.mag and they call
+the functions in addl_data.mag for each entry.
+
+
+Additionally, another file TBLDATA is created which records the examples
+which satify one of the two tables in the paper above.  
+
+
