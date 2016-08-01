@@ -1,0 +1,18 @@
+This folder stores supplementary files for the program ../main.mag.
+
+There is a folder called "BreuerRaw" which contains one file named
+gxx for each genus xx (currently from 02 to 10). Each file, when
+loaded in Magma, creates a list Ldata and each entry in this list
+is a pair consisting of a signature and group, corresponding to one
+entry in Breuer's original data.
+
+
+Additionally, during the execution of the functions in main.mag, a
+file testingfull is created and stored here. This file is created by
+the file ries.mag for each example which might satisfy the conditions
+of Theorem pg. 390 in Ries' paper. It creates the group H (as at the
+end of the Theorem) as a quotient group defined by a series of
+relations and includes a call to the function PrintPossibleFullAuto,
+also in ries.mag. The file is loaded into Magma by a command at the
+end of the file ries.mag. 
+
