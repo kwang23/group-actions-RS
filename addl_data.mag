@@ -92,7 +92,7 @@ AddlData:=procedure(G,sign,Lmonod,Con,cclabel);
    end for;   
 
    if boolh then /* if yes, add equations */
-      eqn:= HypEq(G,sign,g,hinv);
+      eqn:= HypEq(G,sign,g);
  
       PrintFile(storefilename,"HY");
       PrintFile(storefilename,Eltseq(hinv));
