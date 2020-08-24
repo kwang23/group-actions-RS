@@ -2,7 +2,7 @@
 
 ## Statistics
 
-`gps_groups`: Abstract groups up to isomorphism
+`hgcwa_unique_groups`: Counts for the per genus list of groups
 
 Column            | Type     | Notes
 ------------------|----------|------
@@ -14,4 +14,16 @@ topological       | integer  | number of distinct generating vectors, up to topo
 braids            | integer  | number of distinct generating vectors, up to braid equivalence, for this genus and group (if g0_is_gt0 is false)
 g0_gt0_list       | integer[]| list of g0 values this group appears for, if greater than 0
  
+
+
+## Completeness Records
+
+`hgcwa_complete`: for each genus, list if contains data for quotient genus >0  and whether braid and topological have been computed for that genus
+
+Column            | Type     | Notes
+------------------|----------|------
+genus             | smallint | genus
+g0_gt0_compute    | boolean  | whether quotient genus >0 data has been computed for this genus
+top_braid_compute | boolean  | whether topological and braid equivalences have been computed for this genus and g0=0
+top_braid_g0_gt0  | boolean  | False for now (whether topological and braid equivalences have been computed for g0>0
 
