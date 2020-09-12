@@ -12,7 +12,7 @@ g0_is_gt0         | boolean  | whether the group is for quotient genus 0 or quot
 g0_gt0_list       | integer[]| list of g0 values this group appears for, if greater than 0
 gen_vectors       | integer  | number of distinct generating vectors, up to simultaneous conjugation, for this genus and group
 topological       | integer  | number of distinct generating vectors, up to topological equivalence, for this genus and group (if g0_is_gt0 is false)
-braids            | integer  | number of distinct generating vectors, up to braid equivalence, for this genus and group (if g0_is_gt0 is false)
+braid             | integer  | number of distinct generating vectors, up to braid equivalence, for this genus and group (if g0_is_gt0 is false)
 
  
 
