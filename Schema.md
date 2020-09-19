@@ -29,7 +29,7 @@ genus             | smallint | genus
 g0_gt0_compute    | boolean  | whether quotient genus >0 data has been computed for this genus
 top_braid_compute | boolean  | whether topological and braid equivalences have been computed for this genus and g0=0
 top_braid_g0_gt0  | boolean  | False for now (whether topological and braid equivalences have been computed for g0>0)
-num_families      | integer[]| 0th entry is number of distinct families for this genus total, nth entry is for quotient genus n-1
-num_refined_pp    | integer[]| 0th entry is number of distinct refined passports for this genus, nth entry is for quotient genus n-1
-num_gen_vectors   | integer[]| 0th entry is number of distinct generating vectors for this genus, nth entry is for quotient genus n-1
+num_families      | integer[]| 1st entry is number of distinct families for this genus total, nth entry is for quotient genus n-2
+num_refined_pp    | integer[]| 1st entry is number of distinct refined passports for this genus, nth entry is for quotient genus n-2
+num_gen_vectors   | integer[]| 1st entry is number of distinct generating vectors for this genus, nth entry is for quotient genus n-2
 
