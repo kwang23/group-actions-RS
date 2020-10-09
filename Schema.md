@@ -1,5 +1,42 @@
 # Higher Genus Curves Database
 
+
+
+## Main Table
+`hgcwa_passports`: Main data for the pages
+
+Column            | Type     | Notes
+------------------|----------|------
+id                | bigint   |
+ndim              |smallint  |
+jacobian_decomp   | jsonb    |
+cc                | jsonb    |
+full_auto|text|
+passport_label|text|
+group|text|
+signH|text|
+label|text|
+hyp_involution|jsonb|
+full_label|text|
+eqn|jsonb|
+cinv|jsonb|
+hyperelliptic|boolean|
+gen_vectors|jsonb|
+total_label|text|
+g0|smallint|
+dim|smallint|
+group_order|integer|
+cyclic_trigonal|boolean|
+r|smallint|
+signature|text|
+genus|smallint|
+con|text|
+braid|integer[]|
+topological|integer[]|
+realcc|integer[]
+
+
+
 ## Statistics
 
 `hgcwa_unique_groups`: Counts for the per genus list of groups
